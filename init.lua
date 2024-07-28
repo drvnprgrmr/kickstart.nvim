@@ -56,6 +56,14 @@ vim.g.have_nerd_font = true
 -- Set window title
 vim.opt.title = true
 
+-- Deal with tabs
+vim.opt.autoindent = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.smarttab = true
+
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
