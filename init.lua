@@ -87,9 +87,8 @@ vim.opt.signcolumn = 'yes'
 -- Decrease update time
 vim.opt.updatetime = 250
 
--- Decrease mapped sequence wait time
--- Displays which-key popup sooner
-vim.opt.timeoutlen = 300
+-- Increase mapped sequence wait time
+vim.opt.timeoutlen = 1500
 
 -- Configure how new splits should be opened
 vim.opt.splitright = true
@@ -553,7 +552,7 @@ require('lazy').setup({
     lazy = false,
     keys = {
       {
-        '<leader>f',
+        '<leader>F',
         function()
           require('conform').format { async = true, lsp_fallback = true }
         end,
