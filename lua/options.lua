@@ -81,5 +81,8 @@ vim.opt.sidescrolloff = 20
 -- Set highlight on search
 vim.opt.hlsearch = true
 
+-- Enable truecolor support
+vim.opt.termguicolors = true
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
