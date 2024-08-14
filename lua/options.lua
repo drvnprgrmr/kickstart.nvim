@@ -44,6 +44,9 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Don't wrap lines
+vim.opt.wrap = false
+
 -- Stop search at the end of file
 vim.opt.wrapscan = false
 
