@@ -47,7 +47,6 @@ require('lazy').setup({
   require 'kickstart.plugins.conform',
   require 'kickstart.plugins.nvim-cmp',
   require 'kickstart.plugins.colorscheme',
-  require 'kickstart.plugins.todo-comments',
   require 'kickstart.plugins.treesitter',
   -- require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
