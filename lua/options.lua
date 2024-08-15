@@ -26,9 +26,6 @@ vim.opt.relativenumber = true
 -- Enable mouse mode only in visual mode
 vim.opt.mouse = 'v'
 
--- Don't show the mode, since it's already in the status line
-vim.opt.showmode = false
-
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
