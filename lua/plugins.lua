@@ -42,16 +42,16 @@ require('lazy').setup({
   --
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
 
-  require 'kickstart.plugins.telescope',
-  require 'kickstart.plugins.lspconfig',
-  require 'kickstart.plugins.conform',
-  require 'kickstart.plugins.nvim-cmp',
-  require 'kickstart.plugins.colorscheme',
-  require 'kickstart.plugins.treesitter',
-  -- require 'kickstart.plugins.debug',
-  require 'kickstart.plugins.indent_line',
-  require 'kickstart.plugins.lint',
-  require 'kickstart.plugins.autopairs',
+  require 'plugins.telescope',
+  require 'plugins.lspconfig',
+  require 'plugins.conform',
+  require 'plugins.nvim-cmp',
+  require 'plugins.colorscheme',
+  require 'plugins.treesitter',
+  -- require 'plugins.debug',
+  require 'plugins.indent_line',
+  require 'plugins.lint',
+  require 'plugins.autopairs',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
