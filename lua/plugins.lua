@@ -20,7 +20,7 @@ require('lazy').setup({
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
   --
-  require 'kickstart.plugins.gitsigns',
+  require 'plugins.gitsigns',
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
