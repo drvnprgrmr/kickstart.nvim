@@ -51,7 +51,7 @@ vim.opt.wrapscan = false
 vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
-vim.opt.updatetime = 250
+vim.opt.updatetime = 2000
 
 -- Increase mapped sequence wait time
 vim.opt.timeoutlen = 1500
