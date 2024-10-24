@@ -13,6 +13,10 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 
+-- Spelling
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us', 'en_uk', 'cjk' }
+
 -- Keep fold column open up till the 4th level
 vim.opt.foldcolumn = 'auto:4'
 
