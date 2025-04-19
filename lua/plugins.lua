@@ -46,7 +46,7 @@ require('lazy').setup({
   require 'plugins.telescope',
   require 'plugins.lspconfig',
   require 'plugins.conform',
-  require 'plugins.nvim-cmp',
+  require 'plugins.cmp',
   require 'plugins.colorscheme',
   require 'plugins.treesitter',
   -- require 'plugins.debug',
