@@ -88,7 +88,5 @@ vim.opt.hlsearch = true
 -- Enable truecolor support
 vim.opt.termguicolors = true
 
-vim.diagnostic.config { virtual_text = false, float = { source = true, border = 'single' } }
-
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
