@@ -5,6 +5,9 @@
 -- Set window title
 vim.opt.title = true
 
+-- Set default window borders
+vim.opt.winborder = 'single'
+
 -- Deal with tabs
 vim.opt.autoindent = true
 vim.opt.expandtab = true

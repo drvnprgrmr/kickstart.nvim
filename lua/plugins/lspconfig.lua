@@ -74,7 +74,7 @@ return {
           -- Change remap of 'K' to hover with a border instead of without
           map('K', function()
             vim.lsp.buf.hover { border = 'rounded' }
-          end)
+          end, 'Hover')
 
           -- Rename the variable under your cursor.
           --  Most Language Servers support renaming across files, etc.
