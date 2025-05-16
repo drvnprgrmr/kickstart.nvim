@@ -11,7 +11,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-
 -- auto save view
 local auto_save_view = vim.api.nvim_create_augroup('AutoSaveView', { clear = true })
 vim.api.nvim_create_autocmd('BufWinLeave', {
@@ -26,6 +25,19 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
   command = 'silent! loadview',
   group = auto_save_view,
 })
+
+-- cursor line
+-- local cursor_line = vim.api.nvim_create_augroup('CursorLine', { clear = true })
+-- vim.api.nvim_create_autocmd('WinEnter', {
+--   desc = 'Set cursorline on enter',
+--   command = 'setlocal cursorline',
+--   group = cursor_line,
+-- })
+-- vim.api.nvim_create_autocmd('WinLeave', {
+--   desc = 'Set cursorline on enter',
+--   command = 'setlocal nocursorline',
+--   group = cursor_line,
+-- })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

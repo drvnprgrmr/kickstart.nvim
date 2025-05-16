@@ -209,6 +209,7 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
+        svelte = {},
         arduino_language_server = {},
         ts_ls = {},
         eslint = {},
@@ -245,6 +246,7 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'clang-format', -- For formatting cpp code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
