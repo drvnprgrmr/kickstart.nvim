@@ -38,6 +38,16 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
 --   command = 'setlocal nocursorline',
 --   group = cursor_line,
 -- })
+--
 
+-- auto insert some boiler plate code to new files
+local boiler_plate = vim.api.nvim_create_augroup('BoilerPlate', { clear = true })
+vim.api.nvim_create_autocmd('BufNewFile', {
+  pattern = '*.cpp',
+  -- todo: find a better implementation
+  command = '0r ~/.config/nvim-kickstart/lua/boilerplate.cpp',
+  desc = 'Add boilerplate code for cpp files.',
+  group = boiler_plate,
+})
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
