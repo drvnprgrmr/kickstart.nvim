@@ -49,11 +49,11 @@ require('lazy').setup({
   require 'plugins.cmp',
   require 'plugins.colorscheme',
   require 'plugins.treesitter',
-  -- require 'plugins.debug',
+  require 'plugins.debug',
   require 'plugins.indent_line',
   require 'plugins.lint',
   require 'plugins.autopairs',
-
+  require 'plugins.mini',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
