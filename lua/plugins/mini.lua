@@ -31,6 +31,18 @@ return { -- Collection of various small independent plugins/modules
       return '%2l:%-2v'
     end
 
+    -- use relative path names by default
+    ---@diagnostic disable-next-line: duplicate-set-field
+    statusline.section_filename = function()
+      -- In terminal always use plain name
+      if vim.bo.buftype == 'terminal' then
+        return '%t'
+      else
+        -- else use relative path to file
+        return '%f%m%r'
+      end
+    end
+
     -- ... and there is more!
     --  Check out: https://github.com/echasnovski/mini.nvim
   end,
