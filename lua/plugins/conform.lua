@@ -26,6 +26,7 @@ return {
         -- is found.
         -- javascript = { { "prettierd", "prettier" } },
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
+        vhdl = { 'vsg' },
       },
     },
   },
