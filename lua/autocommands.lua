@@ -12,19 +12,19 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- auto save view
-local auto_save_view = vim.api.nvim_create_augroup('AutoSaveView', { clear = true })
-vim.api.nvim_create_autocmd('BufWinLeave', {
-  pattern = '?*.*', -- files must have extension in name and should exist
-  desc = "Save 'view' when leaving the file.",
-  command = 'mkview',
-  group = auto_save_view,
-})
-vim.api.nvim_create_autocmd('BufWinEnter', {
-  pattern = '?*.*', -- files must have extension in name and should exist
-  desc = "Load 'view' when opening a file.",
-  command = 'silent! loadview',
-  group = auto_save_view,
-})
+-- local auto_save_view = vim.api.nvim_create_augroup('AutoSaveView', { clear = true })
+-- vim.api.nvim_create_autocmd('BufWinLeave', {
+--   pattern = '?*.*', -- files must have extension in name and should exist
+--   desc = "Save 'view' when leaving the file.",
+--   command = 'mkview',
+--   group = auto_save_view,
+-- })
+-- vim.api.nvim_create_autocmd('BufWinEnter', {
+--   pattern = '?*.*', -- files must have extension in name and should exist
+--   desc = "Load 'view' when opening a file.",
+--   command = 'silent! loadview',
+--   group = auto_save_view,
+-- })
 
 -- cursor line
 -- local cursor_line = vim.api.nvim_create_augroup('CursorLine', { clear = true })
